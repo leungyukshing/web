@@ -1,0 +1,328 @@
+/*整体布局*/
+html, body {
+  background: url(bg.jpg) no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  text-align: center;
+  font-family: "Century Gothic", Serif;
+}
+#heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+#menu {
+  position: relative;
+  top: 30px;
+  width: 332px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#start {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 25px;
+  box-shadow: 8px 6px 16px black;
+  background-color: #4286F5;
+  opacity: 0.82;
+}
+#start:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+#end {
+  float: left;
+  margin-left: 10px;
+  width: 150px;
+  border: 3px solid black;
+  cursor: pointer;
+  font-size: 25px;
+  box-shadow: 8px 6px 16px black;
+  background-color: #4286F5;
+  opacity: 0.82;
+  
+}
+#end:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+#win {
+  opacity: 0;
+  transition: 0.5s;
+}
+#win_show {
+  opacity: 1;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+/*拼图部分*/
+#frame {
+  position: relative;
+  width: 332px;
+  height: 352px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*划分16个小块*/
+/*id*/
+#pos0 {
+  background: url(panda.jpg) no-repeat;
+  background-position: 0px 0px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos0:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos1 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -83px 0px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos1:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos2 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -166px 0px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos2:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos3 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -249px 0px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos3:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos4 {
+  background: url(panda.jpg) no-repeat;
+  background-position: 0px -88px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos4:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos5 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -83px -88px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos5:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos6 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -166px -88px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos6:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos7 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -249px -88px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos7:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos8 {
+  background: url(panda.jpg) no-repeat;
+  background-position: 0px -176px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos8:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos9 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -83px -176px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos9:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos10 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -166px -176px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos10:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos11 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -249px -176px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos11:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos12 {
+  background: url(panda.jpg) no-repeat;
+  background-position: 0px -264px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos12:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos13 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -83px -264px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos13:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos14 {
+  background: url(panda.jpg) no-repeat;
+  background-position: -166px -264px;
+  border: 1px solid grey;
+  width: 83px;
+  height: 88px;
+  z-index: 1;
+}
+#pos14:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
+#pos15 {
+  background-size: 100%;
+  width: 83px;
+  height: 88px;
+}
+/*class*/
+/*第一行*/
+.pos0, .pos1, .pos2, .pos3 {
+  transition: 0.2s;
+  position: absolute;
+  top: 0px;
+}
+/*第二行*/
+.pos4, .pos5, .pos6, .pos7 {
+  transition: 0.2s;
+  position: absolute;
+  top: 88px;
+}
+/*第三行*/
+.pos8, .pos9, .pos10, .pos11 {
+  transition: 0.2s;
+  position: absolute;
+  top: 176px;
+}
+/*第四行*/
+.pos12, .pos13, .pos14, .pos15 {
+  transition: 0.2s;
+  position: absolute;
+  top: 264px;
+}
+/*第一列*/
+.pos0, .pos4, .pos8, .pos12 {
+  position: absolute;
+  left: 0px;
+}
+/*第二列*/
+.pos1, .pos5, .pos9, .pos13 {
+  position: absolute;
+  left: 83px;
+}
+/*第三列*/
+.pos2, .pos6, .pos10, .pos14 {
+  position: absolute;
+  left: 166px;
+}
+/*第四列*/
+.pos3, .pos7, .pos11, .pos15 {
+  position: absolute;
+  left: 249px;
+}
+
+/*额外功能*/
+/*计时器*/
+#timer {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: left;
+}
+/*记录操作次数*/
+#counter {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: left;
+}

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/detail.css')
+  h1 用户详情
+  if error
+    div.errormessage.server!= error
+  p 用户
+    span #{user.username}
+
+  p 学号
+    span #{user.studentid}
+
+  p 电话
+    span #{user.phone}
+
+  p 邮箱
+    span #{user.email}
+
+  form(action='/signout' method='GET')
+    input(type='submit' value="退出登录")

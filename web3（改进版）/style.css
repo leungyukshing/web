@@ -1,0 +1,259 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin-left: center;
+  margin-right: center;
+  text-align: center;
+  padding: 0px;
+}
+/*at-plus-container is used to contain the hover place*/
+#at-plus-container {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+}
+#at-plus-container:hover {
+  width: 166px;
+  height: 233px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 1%;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 10% 50%;
+}
+
+/*at-plus button*/
+.apb {
+  position: absolute;
+  background-image: url(assets/images/atplus_white.png);
+  background-size: 20px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+  height: 25px;
+  width: 25px;
+  top: 123px;
+  left: 70px;
+  background-color: rgba(155, 155, 210, 1);
+}
+#at-plus-container:hover .apb{
+  top: 110px;
+  left: 65px;
+  width: 50px;
+  height: 50px;
+  background-image: url(assets/images/atplus_green.png);
+  background-size: 35px 27px;
+  background-color: rgba(47, 58, 162, 1);
+  transition-delay: 0.2s;
+}
+
+/*info-bar to contain the ul*/
+#info-bar {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 162px;
+  left: 62px;
+
+}
+.info {
+  position: absolute;
+  font-family: Arial;
+  width: 32px;
+  height: 32px;
+  top: -35px;
+  left: 8px;
+  border-radius: 50%;
+  background-color: rgb(126, 126, 126);
+  transition: 0.5s;
+  opacity: 0;
+}
+#at-plus-container:hover .info {
+  top: -193px;
+  left: -25px;
+  height: 135px;
+  width: 135px;
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.info ul {
+  position: absolute;
+  list-style: none;
+  opacity: 0;
+}
+#at-plus-container:hover ul {
+  top: 0px;
+  left: 10px;
+  opacity: 1;
+}
+
+
+.page {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.user {
+  position: absolute;
+  top: -10px;
+  left: -30px;
+}
+.user img {
+  width: 20px;
+  height: 20px;
+}
+.user span {
+  position: absolute;
+  font-size: 17px;
+  color: white;
+  left: 30px;
+  top: 1px;
+}
+
+.comment {
+  position: absolute;
+  top: -8px;
+  left: 0px;
+}
+.comment img {
+  width: 30px;
+  height: 30px;
+}
+.comment span {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  left: 40px;
+}
+
+.posted {
+  position: absolute;
+  left: 3px;
+  top: -5px;
+}
+.posted span {
+  position: absolute;
+  color: #28D494;
+  left: 30px;
+  top: 3px;
+  font-size: 16px;
+}
+.posted img {
+
+}
+
+.mine span {
+  color: #28D494;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.like {
+  position: absolute;
+  left: 0px;
+  top: -5px;
+}
+.like span {
+  position: absolute;
+  left: 33px;
+  top: 3px;
+}
+.like img {
+
+}
+
+#at-plus-container:hover .user {
+  left: 40px;
+  top: -5px;
+}
+#at-plus-container:hover .comment {
+  left: 32px;
+  top: 25px;
+}
+#at-plus-container:hover .posted {
+  left: 10px;
+  top: 65px;
+}
+#at-plus-container:hover .like {
+  position: relative;
+  left: 26px;
+  top: 65px;
+}
+
+#control-ring-container ul {
+  list-style: none;
+}
+.button {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(105, 105, 105);
+  border-radius: 50%;
+  transition: 0.5s;
+  top: 127px;
+  left: 68px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.button img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 8px;
+  left: 8px;
+}
+.unread {
+  position: absolute;
+  left: 20px;
+  top: -7px;
+  display: block;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 13px;
+  border-radius: 50%;
+}
+
+#at-plus-container:hover .button {
+  opacity: 1;
+  transition-delay: 0.5s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px 17px;
+}
+#at-plus-container:hover .mask {
+  top: 90px;
+  left: 20px;
+  background-image: url(assets/images/mask.png);
+}
+#at-plus-container:hover .history {
+  top: 130px;
+  left: 10px;
+  background-image: url(assets/images/history.png);
+}
+#at-plus-container:hover .message {
+  top: 165px;
+  left: 25px;
+  background-image: url(assets/images/message.png);
+}
+#at-plus-container:hover .unread {
+  opacity: 1;
+}
+#at-plus-container:hover .setting {
+  top: 185px;
+  left: 58px;
+  background-image: url(assets/images/setting.png);
+}
+#at-plus-container:hover .sign {
+  top: 178px;
+  left: 98px;
+  background-image: url(assets/images/signout.png);
+}

@@ -1,0 +1,249 @@
+/*辅助线*/
+div {
+  border: 2px solid black;
+}
+
+/*大布局定位*/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+/*游戏描述*/
+#discription {
+  border: none;
+  text-align: center;
+}
+#win {
+  border: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 30px;
+  top: 80px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+#win_display {
+  border: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 30px;
+  top: 80px;
+  transition: opacity 1s linear;
+  opacity: 100;
+}
+#lose {
+  border: none;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+#lose_display {
+  border: none;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 1s linear;
+  opacity: 100;
+}
+#cheat {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  top: 80px;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+#cheat_display {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  top: 80px;
+  transition: opacity 1s linear;
+  opacity: 100;
+}
+
+/*文字属性*/
+span {
+  font-family: Century Gothic;
+}
+#heading {
+  font-weight: bold;
+  font-size: 25px;
+}
+.sign {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*墙*/
+#frame {
+  position: relative;
+  top: 20px;
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+#frame_start {
+  position: relative;
+  top: 20px;
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  cursor: pointer;
+}
+#start {
+  position: absolute;
+  top: 200px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: green;
+  margin-top: 3px;
+  border: 1px solid black;
+}
+
+#end {
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: purple;
+  margin-top: 3px;
+  border: 1px solid black;
+}
+
+#leftwall {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  top: 195px;
+  left: -32px;
+  border: none;
+}
+#rightwall {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  top: 195px;
+  right: -32px;
+  border: none;
+}
+.deadzone {
+  background-color: grey;
+}
+.deadzone_red {
+  background-color: red;
+}
+#one {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border-bottom: none;
+  border-right: none;
+}
+#two {
+  position: absolute;
+  left: 150px;
+  width: 200px;
+  height: 50px;
+  border-left: none;
+  border-right: none;
+}
+#three {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  height: 50px;
+  border-left: none;
+  border-bottom: none;
+}
+#four {
+  position: absolute;
+  top: 50px;
+  width: 150px;
+  height: 150px;
+  border-top: none;
+}
+#five {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 100px;
+  height: 150px;
+  border-bottom: none;
+}
+#six {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+  border-top: none;
+}
+#seven {
+  position: absolute;
+  bottom: 0px;
+  width: 200px;
+  height: 50px;
+  border-right: none;
+}
+#eight {
+  position: absolute;
+  bottom: 0px;
+  left: 200px;
+  width: 100px;
+  height: 50px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+#nine {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 200px;
+  height: 50px;
+  border-left: none;
+}
+
+/*提示*/
+#guidance {
+  position: relative;
+  border: none;
+  top: 30px;
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sample {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+}

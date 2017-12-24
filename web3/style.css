@@ -1,0 +1,209 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+}
+ul li {
+    list-style: none;
+}
+#button, .icon, .button {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+}
+#button {
+    height: 30px;
+    width: 30px;
+}
+/*icon*/
+.icon {
+    background: url(assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-color: #7171C6;
+    background-position: 50% 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 10;
+}
+#button:hover .icon {
+    background: url(assets/images/atplus_green.png);
+    background-repeat: no-repeat;
+    background-color: rgba(48, 63, 159, 1);
+    background-position: 50% 50%;
+    background-size: 90%;
+    transition: all 0.6s linear;
+    transform: scale(1.7);
+}
+
+/*info-bar*/
+#button .info {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: gray;
+    position: absolute;
+    bottom: -10px;
+    left: -35px;
+    transform: scale(0.2);
+    transition-delay: 0.5s;
+    transition: all 0.8s ease-in-out 0s;
+}
+#button:hover .info {
+    transition: all 0.8s ease-in-out 0s;
+    transform: scale(1.2);
+    position: absolute;
+    bottom: 120px;
+    left: -35px;
+}
+span {
+    font-size: 10pt;
+    color: white;
+    margin-left: 8px;
+    font-weight: bold;
+    vertical-align: 20%;
+}
+#button .page.user {
+    position: relative;
+    top: -6px;
+    left: -20px;
+}
+#button .page.user span {
+}
+#button .page.comment {
+    position: relative;
+    left:-18px;
+    top: -6px;
+}
+#button .page.comment span {
+    font-size: 20pt;
+}
+#button .mine.posted {
+    float: left;
+    position: relative;
+    left: -15px;
+}
+#button .mine.posted span {
+    position: relative;
+    left: -5px;
+    font-size: 18px;
+    color: #079E6E;
+}
+#button .mine.like {
+    float: right;
+    position: relative;
+    right: 15px;
+}
+#button .mine.like span {
+    position: relative;
+    left: -5px;
+    font-size: 18px;
+    color: #079E6E;
+}
+
+/*control-ring*/
+#button .mask {
+    background: url(assets/images/nomask.png);
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-position: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transform: scale(0.2);
+    transition-delay: 0.5s;
+    transition: all 0.8s ease-in-out 0s;
+}
+#button:hover .mask {
+    transition: all 0.8s ease-in-out 0s;
+    transform: scale(1.1);
+    bottom: 80px;
+    left: -50px;
+}
+#button .history {
+    background: url(assets/images/history.png);
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transform: scale(0.2);
+    transition-delay: 0.5s;
+    transition: all 0.8s ease-in-out 0s;
+}
+#button:hover .history {
+    transition: all 0.8s ease-in-out 0s;
+    transform: scale(1.1);
+    position: absolute;
+    bottom: 35px;
+    left: -60px;
+}
+#button .message {
+    background: url(assets/images/message.png);
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transform: scale(0.2);
+    transition-delay: 0.5s;
+    transition: all 0.8s ease-in-out 0s;
+}
+#button:hover .message {
+    transition: all 0.8s ease-in-out 0s;
+    transform: scale(1.1);
+    position: absolute;
+    bottom: -10px;
+    left: -40px;
+}
+#button .setting {
+    background: url(assets/images/setting.png);
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transform: scale(0.2);
+    transition-delay: 0.5s;
+    transition: all 0.8s ease-in-out 0s;
+}
+#button:hover .setting {
+    transition: all 0.8s ease-in-out 0s;
+    position: absolute;
+    transform: scale(1.1);
+    bottom: -30px;
+    left: 10px;
+}
+#button .sign {
+    background: url(assets/images/signin.png);
+    background-repeat: no-repeat;
+    background-color: grey;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transform: scale(0.2);
+    transition-delay: 0.5s;
+    transition: all 0.8s ease-in-out 0s;
+}
+#button:hover .sign {
+    transition: all 0.8s ease-in-out 0s;
+    position: absolute;
+    transform: scale(1.1);
+    bottom: -10px;
+    left: 60px;
+}
+#button .unread {
+    font-size: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    right: -10px;
+}

@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/signup.css')
+  script(type='text/javascript' src='javascripts/validator.js')
+  script(type='text/javascript' src='javascripts/signup.js')
+
+  h1 注册用户
+  div(id='wrapper')
+    form(method='post')
+      if error
+        div.errormessage!= error
+      div
+        div.username
+        label(for='username') 用户
+        input(id='username', name='username', value=user.username)
+        span.errormessage
+
+      div
+        div.studentid
+        label(for='studentid') 学号
+        input(id='studentid', name='studentid', value=user.studentid)
+        span.errormessage
+
+      div
+        div.password
+        label(for='password') 密码
+        input(id='password', name='password', value=user.password, type='password')
+        div.eye.one
+        span.errormessage
+
+      div.re-wrapper
+        div.repeatpassword
+        label(for='repeatpassword') 确认密码
+        input(id='repeatpassword', name='repeatpassword', value=user.repeatpassword, type='password')
+        div.eye.two
+        span.errormessage
+
+      div.phone-wrapper
+        div.phone
+        label(for='phone') 电话
+        input(id='phone', name='phone', value=user.phone)
+        span.errormessage
+
+      div.email-wrapper
+        div.email
+        label(for='email') 邮箱
+        input(id='email', name='email', value=user.email)
+        span.errormessage
+
+      div.buttons
+        input.button.reset(type='button', value='清除')
+        input.button.submit(type='submit', value='提交')
+        a.switch-signin-signup(href='/signin') 登陆

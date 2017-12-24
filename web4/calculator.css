@@ -1,0 +1,150 @@
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+#frame {
+  position: relative;
+  top: 30px;
+  height: 549px;
+  width: 364px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 30px;
+}
+#nummessege {
+  position: absolute;
+  top: 0px;
+  height: 90px;
+  width: 360px;
+  font-size: 50px;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  text-align: right;
+  background-color: black;
+  color: white;
+  /*overflow-y: scroll;
+  word-wrap: break-word;*/
+}
+.btn {
+  width: 90px;
+  height: 90px;
+  background-color: lightgrey;
+  border: 0.5px solid black;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #BCBDC0;
+}
+.add, .substract, .mul, .division, .result {
+  width: 90px;
+  height: 90px;
+  background-color: orange;
+  border: 0.5px solid black;
+}
+.add:hover, .substract:hover, .mul:hover, .division:hover, .result:hover {
+  cursor: pointer;
+  background-color: #BCBDC0;
+}
+
+#CE {
+  position: absolute;
+  top: 94px;
+}
+#backspace {
+  position: absolute;
+  top: 94px;
+  left: 91px;
+}
+#decimal {
+  position: absolute;
+  top: 94px;
+  left: 182px;
+}
+#division {
+  position: absolute;
+  top: 94px;
+  left: 273px;
+}
+#seven {
+  position: absolute;
+  top: 185px;
+}
+#eight {
+  position: absolute;
+  top: 185px;
+  left: 91px;
+}
+#nine {
+  position: absolute;
+  top: 185px;
+  left: 182px;
+}
+#mul {
+  position: absolute;
+  top: 185px;
+  left: 273px;
+}
+#four {
+  position: absolute;
+  top: 276px;
+}
+#five {
+  position: absolute;
+  top: 276px;
+  left: 91px;
+}
+#six {
+  position: absolute;
+  top: 276px;
+  left: 182px;
+}
+#substract {
+  position: absolute;
+  top: 276px;
+  left: 273px;
+}
+#one {
+  position: absolute;
+  top: 367px;
+}
+#two {
+  position: absolute;
+  top: 367px;
+  left: 91px;
+}
+#three {
+  position: absolute;
+  top: 367px;
+  left: 182px;
+}
+#add {
+  position: absolute;
+  top: 367px;
+  left: 273px;
+}
+#zero {
+  position: absolute;
+  top: 458px;
+}
+#leftbracket {
+  position: absolute;
+  top: 458px;
+  left: 91px;
+}
+#rightbracket {
+  position: absolute;
+  top: 458px;
+  left: 182px;
+}
+#result {
+  position: absolute;
+  top: 458px;
+  left: 273px;
+}

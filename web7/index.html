@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>注册</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js "></script>
+  <script type="text/javascript" src="validator.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <h1> 注册用户 </h1>
+  <div id="wrapper">
+  <form method="post">
+    <div class="username">
+      <label for="username"> 姓名
+        <input id="username" name="username" value="">
+        <span class="errormessege"></span>
+      </label>
+    </div>
+    <div class="studentid"> 
+      <label for="studentid"> 学号
+        <input id="studentid" name="studentid" value="">
+        <span class="errormessege"></span>
+      </label>
+    </div>
+    <div class="phone">
+      <label for="phone"> 电话
+        <input id="phone" name="phone" value="">
+        <span class="errormessege"></span>
+      </label>
+    </div>
+    <div class="email">
+      <label for="email"> 邮箱
+        <input id="email" name="email" value="">
+        <span class="errormessege"></span>
+      </label>
+    </div>
+    <div class="buttons">
+      <input class="button reset" type="button" value="清除">
+      <input class="button submit" type="submit" value="提交">
+    </div>
+  </form>
+  </div>
+</body>
+</html>

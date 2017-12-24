@@ -1,0 +1,107 @@
+html, body {
+  width:100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+input {
+  height: 20px;
+  width: 200px;
+  margin-left: 20px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  outline: none;
+  border-bottom-color: lightgrey;
+  border-bottom-width: 1px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+#wrapper {
+  position: absolute;
+  left: 40%;
+  text-align: left;
+}
+.username {
+  margin-bottom: 20px;
+  background-image: url(user.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 33px;
+}
+.studentid {
+  margin-bottom: 20px;
+  background-image: url(id.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 33px;
+}
+.phone {
+  background-image: url(phone.png);
+  background-size: 20px 20px;
+  background-position: 33px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.email {
+  margin-bottom: 15px;
+  background-image: url(email.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 33px;
+}
+.buttons {
+  position: relative;
+  left: 60px;
+}
+.buttons>input {
+  width: 50px;
+  height: 30px;
+  opacity: 0.76;
+  color: #757575;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  line-height: 27px;
+}
+.buttons>input:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+  border: 1px solid #c6c6c6;
+}
+span {
+  font-size: 12px;
+}
+
+.errormessege {
+  color: #BE4B49;
+}
+.tip {
+  color: #999999;
+}
+#uniquemessage {
+  background-image: url(warning.png);
+  background-position: 0px 2px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  position: absolute;
+  left: 40%;
+  text-align: left;
+  top: 310px;
+}
+#uniquemessage span {
+  margin-top: 5px;
+  margin-left: 22px;
+  color: #BE4B49;
+  font-size: 18px;
+}
+#mark {
+  display: none;
+  color: white;
+}

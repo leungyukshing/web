@@ -1,0 +1,60 @@
+.Content {
+	background-color: yellow;
+	width: 300px;
+	height: 85px;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	text-align: center;
+	font-size: 25px;
+}
+.ContentDown {
+	background:#DD0056; 
+	width:300px;
+	height: 85px;
+	color:#FFFFFF;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	text-align: center;
+	font-size: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ContentHover {
+	background:#FF2491; 
+	color:#FFFFFF;
+	width: 300px;
+	height: 85px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	text-align: center;
+	font-size: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+body {
+	background-image: url(http://www.lanrentuku.com/savepic/img/allimg/1206/5-120601095939.jpg);
+	background-repeat: repeat;
+	text-align: center;
+}
+h1 {
+	font-size: 50px;
+	color: blue;
+	text-align: center;
+	font-family: Verdana;
+}
+a {
+	font-size:25px;
+	position: relative;
+	top: 28px;
+}
+
+p {
+	text-align: center;
+	font-size: 24px;
+	color: green;
+}

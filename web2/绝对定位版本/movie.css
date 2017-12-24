@@ -1,0 +1,215 @@
+body {
+	background: url(background.png);
+	background-repeat: repeat;
+	margin: 0px;
+	font-family: Verdana;
+	font-size: 8pt;
+}
+#banner {
+	position: absolute;
+	background-image: url(bannerbackground.png);
+	top:0px;
+	left: 0px;
+	right: 0px;
+	width:100%;
+	height: 50px;
+}
+#heading {
+	font-weight: bold;
+	font-size: 24pt;
+	text-align: center;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+#framework {
+	font-size: 8pt;
+	font-family: Verdana;
+	width: 800px;
+	height: auto;
+	margin: auto;
+	border-width: 4px;
+	border-style: solid;
+	border-color: grey;
+}
+
+#rotten {
+	float:left;
+	background-image: url(rottenbackground.png);
+	background-repeat: repeat;
+	width: 550px;
+	height: 83px;
+}
+
+#rate {
+	position: relative;
+	float:left;
+	font-weight: bold;
+	top:0px;
+	left:0px;
+	font-size: 48pt;
+	color: red;
+	height: 83px;
+	border-width: 0px;
+	margin: 0px;
+}
+#text {
+	float:left;
+	position: relative;
+	font-weight: normal;
+	top: 55px;
+	left: 0px;
+	font-size: 8px;
+	color: white;
+	margin: 0px;
+}
+#comment {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 550px;
+	margin: 0px;
+	height: 500px;
+}
+
+.box {
+	position: relative;
+	top: 8px;
+	left: 0px;
+	right: 8px;
+	border-width: 2px thick;
+	border-color: grey;
+	background-color: #E1D697;
+	margin: 0px;
+	border-style: solid;
+}
+#l3 {
+	height: 41px;
+}
+.rightbox {
+	position: relative;
+	top: 8px;
+	left: 0px;
+	right: 8px;
+	border-width: 2px thick;
+	border-color: grey;
+	background-color: #E1D697;
+	margin: 0px;
+	border-style: solid;
+}
+#r1 {
+	height: 151px;
+}
+#icon {
+	position: relative;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	float: left;
+}
+
+#righticon {
+	position: relative;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	float: left;
+}
+p {
+	position: relative;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+	font-weight: bold;
+	word-break: normal;
+	word-wrap: break-word;
+}
+#person {
+	position: relative;
+	top:8px;
+	margin: 0px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#photo {
+	position: relative;
+	float: left;
+	left: 8px;
+	top: 8px;
+	margin: 0px;
+}
+
+#name {
+	position: relative;
+	margin-bottom: 3em;
+	margin-top: 8px;
+}
+#left {
+	position: relative;
+	float:left;
+	width: 48%;
+	top: 0px;
+	left: 6px;
+}
+
+#right {
+	position: relative;
+	float:right;
+	width: 48%;
+	right: 6px;
+}
+
+#info {
+	position: relative;
+	top: -636px;
+	right: 0px;
+	float: right;
+	margin: 0px;
+	background-color: #A2B964;
+	font-size: 8px;
+	font-family: Arial;
+	width: 250px;
+}
+#general {
+	position: relative;
+	left:514px;
+	top: -636px;
+	float: right;
+}
+dl {
+	margin-left: 10px;
+	width: 230px;
+}
+dt {
+	font-weight: bold;
+	line-height: 1em;
+}
+dd {
+	margin-bottom: 1em;
+	margin-left: 22pt;
+}
+#description {
+	font-weight: normal;
+	margin: 0px;
+}
+#bar {
+	position: relative;
+	top: 189px;
+	background-color: #A2B964;
+	width: 800px;
+	height: 18px;
+	text-align: center;
+	white-space:nowrap;
+	clear: both;
+}
+
+#bottom {
+	position: relative;
+	top:5px;
+	font-size: 8px;
+	margin: 0px;
+	text-align: center;
+}
